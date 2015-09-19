@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Pizza Order From</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <h3>Hungry?</h3>
+                <form id="order-pizza">
+                    <div class="form-group">
+                        <label for="sel1">Select a pizza size:</label>
+                        <select class="form-control" id="size">
+                            <option value="large">Large</option>
+                            <option value="extra large">Extra Large</option>
+                            <option value="medium">Medium</option>
+                            <option value="small">Small</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input id="amount" class="form-control" type="number" required placeholder="amount">
+                    </div>
+
+                    <h3>Add toppings:</h3>
+                    <div class="row toppings">
+                        <div class="col-xs-6 form-group">
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="extra-cheese">Extra Cheese</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="pepperoni">Pepperoni</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="sausage">Sausage</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="onions">Onions</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="bacon">Bacon</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="pineapple">Pineapple</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="green-peppers">Green Peppers</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" class="toppings" value="ground-beef">Ground Beef</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Order Pizza</button>
+                </form>
+            </div>
+            <div class="receipt-display">
+                <h3>Order placed</h3>
+                <h4>Size: <span id="receipt-size"></span></h4>
+                <h4>Toppings ($.75 per item):</h4>
+                <ul id="receipt-toppings">
+                </ul>
+                <h4>Amount: <span id="receipt-amount"></span></h4>
+                <h4>Total: <span id="receipt-price"></span></h4>
+                <button type="submit" id="new-order" class="btn btn-primary">New Order</button>
+            </div>
+        </div>
+    </body>
+</html>
