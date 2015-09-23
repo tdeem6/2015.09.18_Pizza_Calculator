@@ -42,7 +42,7 @@ describe('priceCalc', function() {
   it("adds $.75 for every topping", function() {
       var testPizza = new Pizza(1, "large", "pepperoni", "sausage");
       expect(testPizza.costCalc()).to.eql(11.50);
-      var testPizza = new Pizza(1, "large", ["pepperoni"]);
+      var testPizza = new Pizza(1, "large", "pepperoni");
       expect(testPizza.costCalc()).to.eql(10.75);
   });
 
