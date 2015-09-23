@@ -44,7 +44,7 @@ $(document).ready(function() {
         });
         newPizza = new Pizza(quantity, pizzaSize, toppings);
         $("#receipt-size").text(pizzaSize);
-        $("#receipt-amount").text(amount);
+        $("#receipt-quantity").text(quantity);
         $("#receipt-price").text("$" + newPizza.priceCalc());
         $(".main").hide();
         $(".receipt-display").fadeIn();
