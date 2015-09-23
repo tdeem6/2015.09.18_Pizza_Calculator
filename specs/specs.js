@@ -1,4 +1,4 @@
-describe('Pizza', function() {
+describe("Pizza", function() {
   it("creates a new pizza with added size and toppings", function() {
     var testPizza = new Pizza(1, "large", "pepperoni");
     expect(testPizza.pizzaAmount).to.equal(1);
@@ -16,7 +16,7 @@ describe('Pizza', function() {
     expect(testPizza.pizzaToppings).to.equal("pepperoni", "sausage", "onions");
   });
 
-  it ("sets a price for the pizza based on size selected", function() {
+  it("sets a price for the pizza based on size selected", function() {
     var testPizza = new Pizza(1, "large");
     expect(testPizza.basePrice).to.equal(10);
     var testPizza = new Pizza(1, "medium");
@@ -28,7 +28,7 @@ describe('Pizza', function() {
   });
 });
 
-describe('priceCalc', function() {
+describe("priceCalc", function() {
   it("returns an integer for price", function() {
       var testPizza = new Pizza(1, "large", "pepperoni");
       expect(testPizza.costCalc()).to.be.a("number");
